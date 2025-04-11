@@ -1,7 +1,7 @@
 import { auth } from "../firebase-config.js";
 import { signOut } from "firebase/auth";
-
 import Cookies from "universal-cookie";
+import "../styles/App.css";
 
 const cookies = new Cookies();
 
@@ -16,7 +16,7 @@ export const AppWrapper = ({ children, isAuth, setIsAuth, setIsInChat }) => {
   return (
     <div className="App">
       <div className="app-header">
-        <h1> Chat App </h1>
+        <h1>Chat App</h1>
       </div>
 
       <div className="app-container">{children}</div>
@@ -25,6 +25,9 @@ export const AppWrapper = ({ children, isAuth, setIsAuth, setIsInChat }) => {
           <button onClick={signUserOut}> Sign Out</button>
         </div>
       )}
+      <footer className="footer">
+  Made by <strong>Reiji</strong>
+</footer>
     </div>
   );
 };

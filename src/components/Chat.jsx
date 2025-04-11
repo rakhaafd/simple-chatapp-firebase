@@ -9,8 +9,7 @@ import {
   query,
   orderBy,
 } from "firebase/firestore";
-
-import "../styles/Chat.css";
+import "../styles/App.css";
 
 export const Chat = ({ room }) => {
   const [messages, setMessages] = useState([]);

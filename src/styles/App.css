@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+* {
+  font-family: "JetBrains Mono";
+}
+
+/* Reset dan dasar layout */
+body {
+  margin: 0;
+  font-family: "JetBrains Mono";
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+.app-header {
+  background-color: #2563eb;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Container utama */
+.app-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Auth Page */
+.auth {
+  text-align: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.auth button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.auth button:hover {
+  background-color: #1e40af;
+}
+
+/* Room Input */
+.room {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.room label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.room input {
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 300px;
+  outline: none;
+}
+
+.room button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease;
+}
+
+.room button:hover {
+  background-color: #1e40af;
+}
+
+/* Chat Room */
+.chat-app {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.chat-app .header {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.chat-app .messages {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 400px;
+  margin-bottom: 1rem;
+  border: 1px solid #e5e7eb;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #f3f4f6;
+}
+
+.message {
+  margin-bottom: 0.75rem;
+}
+
+.message .user {
+  font-weight: bold;
+  color: #2563eb;
+}
+
+/* New Message Input */
+.new-message-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.new-message-input {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  font-size: 1rem;
+}
+
+.send-button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.send-button:hover {
+  background-color: #1e40af;
+}
+
+/* Sign Out */
+.sign-out {
+  text-align: center;
+  padding: 1rem;
+}
+
+.sign-out button {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.sign-out button:hover {
+  background-color: #b91c1c;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f1f5f9;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
